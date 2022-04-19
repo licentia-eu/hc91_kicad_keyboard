@@ -5,10 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "HC91 Keyboard")
-    (rev "v1")
+    (title "HC 85,90,91 Cherry MX PCB")
+    (date "2022-04-19")
+    (rev "1")
     (company "https://zx.licentia.eu")
-    (comment 1 "HC 91, 40 keys keyboard")
+    (comment 1 "40 Keys Cherry MX PCB")
   )
 
   (lib_symbols
@@ -1395,11 +1396,11 @@
   (symbol (lib_id "Connector_Generic:Conn_02x08_Counter_Clockwise") (at 110.49 43.18 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 4c1d72e9-72ea-470c-921b-46c51b116cfd)
-    (property "Reference" "KEY_CON1" (id 0) (at 100.33 40.6399 90)
+    (property "Reference" "KEY_CON1" (id 0) (at 100.33 41.9099 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_02x08_Counter_Clockwise" (id 1) (at 100.33 43.1799 90)
-      (effects (font (size 1.27 1.27)) (justify left))
+    (property "Value" "" (id 1) (at 100.33 43.1799 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Footprint" "Library:DIP-16_276" (id 2) (at 110.49 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -1615,13 +1616,13 @@
   (symbol (lib_id "Device:Speaker") (at 157.48 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 916ec44c-162e-4efe-9356-b7f8b461290d)
-    (property "Reference" "LS1" (id 0) (at 162.56 29.2099 0)
+    (property "Reference" "Speaker1" (id 0) (at 162.56 29.2099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 162.56 31.7499 0)
+    (property "Value" "Speaker" (id 1) (at 162.56 31.7499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 157.48 34.29 0)
+    (property "Footprint" "Library:SIP-2" (id 2) (at 157.48 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 157.226 30.48 0)
@@ -1873,7 +1874,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e8fb4f67-b4ca-47ed-95a2-2aefb2346b30)
     (property "Reference" "RESET1" (id 0) (at 146.05 13.97 0))
-    (property "Value" "SW_Push" (id 1) (at 146.05 16.51 0))
+    (property "Value" "" (id 1) (at 146.05 16.51 0))
     (property "Footprint" "" (id 2) (at 146.05 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1985,9 +1986,6 @@
     (path "/698bfa6b-25b2-4b84-b184-f323fa4a01e0"
       (reference "L1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
     )
-    (path "/916ec44c-162e-4efe-9356-b7f8b461290d"
-      (reference "LS1") (unit 1) (value "Speaker") (footprint "Library:SIP-2")
-    )
     (path "/857d63e5-3418-478e-9b93-b658fd19cf95"
       (reference "M1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
     )
@@ -2007,7 +2005,7 @@
       (reference "R1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
     )
     (path "/e8fb4f67-b4ca-47ed-95a2-2aefb2346b30"
-      (reference "RESET1") (unit 1) (value "SW_Push") (footprint "")
+      (reference "RESET1") (unit 1) (value "RESET") (footprint "Library:SIP-2")
     )
     (path "/fdc93240-62aa-421a-8034-c3b0a831931d"
       (reference "S1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
@@ -2017,6 +2015,9 @@
     )
     (path "/6cc87927-4fa7-4553-939e-26539d04d782"
       (reference "SS1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
+    )
+    (path "/916ec44c-162e-4efe-9356-b7f8b461290d"
+      (reference "Speaker1") (unit 1) (value "Speaker") (footprint "Library:SIP-2")
     )
     (path "/c2b57010-d802-4699-ae2a-f7ebf104fef4"
       (reference "T1") (unit 1) (value "SW_Cherry_MX_1.00u_Plate") (footprint "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate")
